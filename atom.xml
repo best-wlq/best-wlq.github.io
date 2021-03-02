@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>一个摸鱼犯的自白</title>
+  
+  <subtitle>别问，问就是摸了</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2021-03-02T08:27:22.679Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>best-wlq</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo+next+gitee博客搭建相关</title>
+    <link href="http://example.com/2021/03/01/Blog-EVA/"/>
+    <id>http://example.com/2021/03/01/Blog-EVA/</id>
+    <published>2021-03-01T12:28:56.443Z</published>
+    <updated>2021-03-02T08:27:22.679Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    
+    <category term="杂谈" scheme="http://example.com/tags/%E6%9D%82%E8%B0%88/"/>
+    
+  </entry>
+  
+</feed>
