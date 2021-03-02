@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-03-02T08:27:22.679Z</updated>
+  <updated>2021-03-02T10:32:36.649Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,25 +17,27 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hexo+next+gitee博客搭建相关</title>
+    <title>Hexo+next+github/gitee博客搭建相关</title>
     <link href="http://example.com/2021/03/01/Blog-EVA/"/>
     <id>http://example.com/2021/03/01/Blog-EVA/</id>
     <published>2021-03-01T12:28:56.443Z</published>
-    <updated>2021-03-02T08:27:22.679Z</updated>
+    <updated>2021-03-02T10:32:36.649Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="简单说明"><a href="#简单说明" class="headerlink" title="简单说明"></a>简单说明</h4><ul><li><p>网上关于博客搭建的教程已经很多，建议bilibili+关键词（hexo博客搭建教程）搜索得到详细的搭建流程。</p></li><li><p>对于用到的几个工具的使用逻辑说明一下。</p><p>| 工具         | 功能                                                         |      |<br>| —————— | —————————————————————————————— | —— |<br>| Node.js+npm  | 最底层的工具，方便后续的软件的安装和插件的管理               |      |<br>| Hexo         | 开源的博客框架，安装好它就可以得到一个基本的博客模板         |      |<br>| Next         | 基于hexo博客框架的一种博客主题，使用广泛，简约自然           |      |<br>| git          | 版本控制工具，这里主要是为了方便部署到远端                   |      |<br>| gitee/github | 云端的代码仓库，即免费的服务器，用于托管本地的bolg到云端，使得别人能够通过互联网访问你的blog |      |<br>| hexo-xxx-xx  | hexo的插件，用于始现blog的拓展功能，比如使用数学公式等       |      |</p></li></ul><h4 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h4><ul><li><a href="https://www.cylong.com/blog/2016/04/19/hexo-git/">Hexo + Git 搭建免费的个人博客</a></li><li><a href="https://wylu.me/posts/6f2f62d0/">Hexo配置NexT主题</a></li></ul><h4 id="几种方案比较"><a href="#几种方案比较" class="headerlink" title="几种方案比较"></a>几种方案比较</h4><ol><li>github虽然可以自动更新页面，但是访问不稳定。</li><li>gitee(码云)虽然访问稳定，但是不自动更新页面，自动更新服务需要付费。</li><li>买域名+自建服务器，解决了上述问题，但是租用ip和vps每年有相对较高的开销。</li></ol>]]></content>
     
     
       
       
-        
-        
-    <summary type="html"></summary>
-        
+    <summary type="html">&lt;h4 id=&quot;简单说明&quot;&gt;&lt;a href=&quot;#简单说明&quot; class=&quot;headerlink&quot; title=&quot;简单说明&quot;&gt;&lt;/a&gt;简单说明&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;网上关于博客搭建的教程已经很多，建议bilibili+关键词（hexo博客搭建教程）搜索得到详细的搭建流程</summary>
       
     
     
     
+    <category term="杂谈" scheme="http://example.com/categories/%E6%9D%82%E8%B0%88/"/>
     
-    <category term="杂谈" scheme="http://example.com/tags/%E6%9D%82%E8%B0%88/"/>
+    
+    <category term="Blog" scheme="http://example.com/tags/Blog/"/>
     
   </entry>
   
