@@ -6,7 +6,7 @@
   <link href="https://best-wlq.github.io/atom.xml" rel="self"/>
   
   <link href="https://best-wlq.github.io/"/>
-  <updated>2021-03-02T10:41:36.248Z</updated>
+  <updated>2022-02-09T09:12:06.128Z</updated>
   <id>https://best-wlq.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Overleaf+local workshop工作流</title>
+    <link href="https://best-wlq.github.io/2022/02/09/%E5%AD%A6%E6%9C%AF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    <id>https://best-wlq.github.io/2022/02/09/%E5%AD%A6%E6%9C%AF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/</id>
+    <published>2022-02-09T08:01:41.000Z</published>
+    <updated>2022-02-09T09:12:06.128Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Overleaf-local-workshop工作流"><a href="#Overleaf-local-workshop工作流" class="headerlink" title="Overleaf+local workshop工作流"></a>Overleaf+local workshop工作流</h3><h4 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h4><p>为了解决论文写作和他人协作问题，本人尝试将本地端的latex编译和远程端的overleaf通过git结合起来，但由于平台本身兼容性一般，所以只能在工作流上进行取舍。</p><h4 id="流程描述"><a href="#流程描述" class="headerlink" title="流程描述"></a>流程描述</h4><p>主客体指代：St 表示学生，M表示老师。</p><ol><li><p>论文在overleaf端进行初始化，St作为初稿撰写人，做了以下几件事。</p><ul><li>Pull from overleaf。</li><li>开始撰写，完成初稿。</li><li>放到online网站上改grammar。（初改）</li><li>make commit</li><li>Push 到overleaf</li></ul></li></ol><p>======下面部分都在overleaf端完成=====</p><ol start="2"><li><p>M作为审阅人做如下几件事</p><ul><li>在overleaf端进行论文的逐字查看。打开track change模式</li><li>对于论文进行部分修改，修改部分会保存在track change里。可以对change进行comment。</li></ul></li></ol><ol start="3"><li><p>St作为学生进入修改部分</p><ul><li>对change部分进行accept or reject。</li><li>对comment部分进行回应or resolve。</li></ul></li><li><p>对2，3两步进行多次迭代</p></li></ol><p>========最终提交=========</p><ul><li>在上述的comment都resolve了之后，将论文放进grammarly进行修改。</li><li>论文交付机构润色</li><li>提交</li></ul><h4 id="GitHub工作流"><a href="#GitHub工作流" class="headerlink" title="GitHub工作流"></a>GitHub工作流</h4><p>若合作者对于Git工具能熟练运用的话，则采用github工作流是更好的。</p><ul><li>学生S创建一篇文档，并在GitHub上创建对应的项目。该项目包含一个master主分支和一个处于用于开发测试dev分支。</li><li>S和老师T从GitHub上pull项目到本地，并建立一样的git系统（master+dev分支）。</li><li>S在自己的本地的dev上修改，并将改动push到远端的dev上。</li><li>T也在自己本地的dev上进行了修改，在提交过程中发生了冲突（因为S先提交了修改使得remote更新了）。此时需要pull remote到本地，然后resolve 冲突。最后再push到远端。</li><li>参考：<a href="https://zhuanlan.zhihu.com/p/30044692">https://zhuanlan.zhihu.com/p/30044692</a></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;Overleaf-local-workshop工作流&quot;&gt;&lt;a href=&quot;#Overleaf-local-workshop工作流&quot; class=&quot;headerlink&quot; title=&quot;Overleaf+local workshop工作流&quot;&gt;&lt;/a&gt;Overleaf</summary>
+      
+    
+    
+    
+    
+    <category term="杂谈" scheme="https://best-wlq.github.io/tags/%E6%9D%82%E8%B0%88/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo+next+github/gitee博客搭建相关</title>

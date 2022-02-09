@@ -22,26 +22,26 @@
 
   <meta property="og:type" content="website">
 <meta property="og:title" content="一个摸鱼犯的自白">
-<meta property="og:url" content="https://best-wlq.github.io/index.html">
+<meta property="og:url" content="https://best-wlq.github.io/archives/2022/index.html">
 <meta property="og:site_name" content="一个摸鱼犯的自白">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="best-wlq">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://best-wlq.github.io/">
+<link rel="canonical" href="https://best-wlq.github.io/archives/2022/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
+    isHome : false,
     isPost : false,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>一个摸鱼犯的自白</title>
+  <title>归档 | 一个摸鱼犯的自白</title>
   
 
 
@@ -160,239 +160,49 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content archive">
             
-      
+
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://best-wlq.github.io/2022/02/09/%E5%AD%A6%E6%9C%AF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/liyuwang.png">
-      <meta itemprop="name" content="best-wlq">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="一个摸鱼犯的自白">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/02/09/%E5%AD%A6%E6%9C%AF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/" class="post-title-link" itemprop="url">Overleaf+local workshop工作流</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2022-02-09 16:01:41 / 修改时间：17:12:06" itemprop="dateCreated datePublished" datetime="2022-02-09T16:01:41+08:00">2022-02-09</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+  
+  <div class="post-block">
+    <div class="posts-collapse">
+      <div class="collection-title">
+        <span class="collection-header">嗯..! 目前共计 2 篇日志。 继续努力。</span>
+      </div>
 
       
-          <h3 id="Overleaf-local-workshop工作流"><a href="#Overleaf-local-workshop工作流" class="headerlink" title="Overleaf+local workshop工作流"></a>Overleaf+local workshop工作流</h3><h4 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h4><p>为了解决论文写作和他人协作问题，本人尝试将本地端的latex编译和远程端的overleaf通过git结合起来，但由于平台本身兼容性一般，所以只能在工作流上进行取舍。</p>
-<h4 id="流程描述"><a href="#流程描述" class="headerlink" title="流程描述"></a>流程描述</h4><p>主客体指代：St 表示学生，M表示老师。</p>
-<ol>
-<li><p>论文在overleaf端进行初始化，St作为初稿撰写人，做了以下几件事。</p>
-<ul>
-<li>Pull from overleaf。</li>
-<li>开始撰写，完成初稿。</li>
-<li>放到online网站上改grammar。（初改）</li>
-<li>make commit</li>
-<li>Push 到overleaf</li>
-</ul>
-</li>
-</ol>
-<p>======下面部分都在overleaf端完成=====</p>
-<ol start="2">
-<li><p>M作为审阅人做如下几件事</p>
-<ul>
-<li>在overleaf端进行论文的逐字查看。打开track change模式</li>
-<li>对于论文进行部分修改，修改部分会保存在track change里。可以对change进行comment。</li>
-</ul>
-</li>
-</ol>
-<ol start="3">
-<li><p>St作为学生进入修改部分</p>
-<ul>
-<li>对change部分进行accept or reject。</li>
-<li>对comment部分进行回应or resolve。</li>
-</ul>
-</li>
-<li><p>对2，3两步进行多次迭代</p>
-</li>
-</ol>
-<p>========最终提交=========</p>
-<ul>
-<li>在上述的comment都resolve了之后，将论文放进grammarly进行修改。</li>
-<li>论文交付机构润色</li>
-<li>提交</li>
-</ul>
-<h4 id="GitHub工作流"><a href="#GitHub工作流" class="headerlink" title="GitHub工作流"></a>GitHub工作流</h4><p>若合作者对于Git工具能熟练运用的话，则采用github工作流是更好的。</p>
-<ul>
-<li>学生S创建一篇文档，并在GitHub上创建对应的项目。该项目包含一个master主分支和一个处于用于开发测试dev分支。</li>
-<li>S和老师T从GitHub上pull项目到本地，并建立一样的git系统（master+dev分支）。</li>
-<li>S在自己的本地的dev上修改，并将改动push到远端的dev上。</li>
-<li>T也在自己本地的dev上进行了修改，在提交过程中发生了冲突（因为S先提交了修改使得remote更新了）。此时需要pull remote到本地，然后resolve 冲突。最后再push到远端。</li>
-<li>参考：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/30044692">https://zhuanlan.zhihu.com/p/30044692</a></li>
-</ul>
-
-      
+    <div class="collection-year">
+      <span class="collection-header">2022</span>
     </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2022-02-09T16:01:41+08:00"
+              content="2022-02-09">
+          02-09
+        </time>
+      </div>
+
+      <div class="post-title">
+          <a class="post-title-link" href="/2022/02/09/%E5%AD%A6%E6%9C%AF%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/" itemprop="url">
+            <span itemprop="name">Overleaf+local workshop工作流</span>
+          </a>
+      </div>
+
+    </header>
   </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://best-wlq.github.io/2021/03/01/Blog-EVA/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/liyuwang.png">
-      <meta itemprop="name" content="best-wlq">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="一个摸鱼犯的自白">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/03/01/Blog-EVA/" class="post-title-link" itemprop="url">Hexo+next+github/gitee博客搭建相关</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-03-01 20:28:56" itemprop="dateCreated datePublished" datetime="2021-03-01T20:28:56+08:00">2021-03-01</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-02 18:41:36" itemprop="dateModified" datetime="2021-03-02T18:41:36+08:00">2021-03-02</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%9D%82%E8%B0%88/" itemprop="url" rel="index"><span itemprop="name">杂谈</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h4 id="简单说明"><a href="#简单说明" class="headerlink" title="简单说明"></a>简单说明</h4><ul>
-<li><p>网上关于博客搭建的教程已经很多，建议bilibili+关键词（hexo博客搭建教程）搜索得到详细的搭建流程。</p>
-</li>
-<li><p>对于用到的几个工具的使用逻辑说明一下。</p>
-<table>
-<thead>
-<tr>
-<th>工具</th>
-<th>功能</th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Node.js+npm</td>
-<td>最底层的工具，方便后续的软件的安装和插件的管理</td>
-<td></td>
-</tr>
-<tr>
-<td>Hexo</td>
-<td>开源的博客框架，安装好它就可以得到一个基本的博客模板</td>
-<td></td>
-</tr>
-<tr>
-<td>Next</td>
-<td>基于hexo博客框架的一种博客主题，使用广泛，简约自然</td>
-<td></td>
-</tr>
-<tr>
-<td>git</td>
-<td>版本控制工具，这里主要是为了方便部署到远端</td>
-<td></td>
-</tr>
-<tr>
-<td>gitee/github</td>
-<td>云端的代码仓库，即免费的服务器，用于托管本地的博客到云端，使得别人能够通过互联网访问你的博客</td>
-<td></td>
-</tr>
-<tr>
-<td>hexo-xxx-xx</td>
-<td>hexo的插件，用于实现博客的拓展功能，比如使用数学公式等</td>
-<td></td>
-</tr>
-</tbody></table>
-</li>
-</ul>
-<h4 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h4><ul>
-<li><a target="_blank" rel="noopener" href="https://www.cylong.com/blog/2016/04/19/hexo-git/">Hexo + Git 搭建免费的个人博客</a></li>
-<li><a target="_blank" rel="noopener" href="https://wylu.me/posts/6f2f62d0/">Hexo配置NexT主题</a></li>
-</ul>
-<h4 id="几种方案比较"><a href="#几种方案比较" class="headerlink" title="几种方案比较"></a>几种方案比较</h4><ol>
-<li>github虽然可以自动更新页面，但是访问不稳定。</li>
-<li>gitee(码云)虽然访问稳定，但是不自动更新页面，自动更新服务需要付费。</li>
-<li>买域名+自建服务器，解决了上述问题，但是租用ip和vps每年有相对较高的开销。</li>
-</ol>
-
-      
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
+  </div>
   
   
   
-
 
   
 
